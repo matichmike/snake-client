@@ -9,6 +9,14 @@ const connect = function() {
     port: 50541
   })
   
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: MSH');
+  });
+
   conn.on('data', (kickoutMsg) => {
   console.log(kickoutMsg);
   });
