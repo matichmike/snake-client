@@ -26,6 +26,15 @@ const handleUserInput = (input) => { // Do something based on user input
   if (input === 'd') {
     connection.write("Move: right")
   }
+  if (input === 'q') {
+    connection.write("Say: Hi there")
+  }
+  if (input === 'e') {
+    connection.write("Say: Goodbye")
+  }
+  if (input === 'r') {
+    connection.write("Say: I need a burger")
+  }
 };
 
 
